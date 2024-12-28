@@ -1,50 +1,292 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 :root {
-  --primary-color: #2e6e85;
+  --main-color: #00ff00;
 }
 
 body {
-  background: #131722 !important;
-  font-family: "Montserrat Alternates", sans-serif;
-  color:white !important;
+  font-family: "Inter", serif !important;
+
+
+  background: #021407 !important;
+
+}
+/* start  header */
+.header{
+  background:#0b1d0b;
+  color: var(--main-color);
+  height: 13vh;
+}
+.header .phoneicon{
+  color:var(--main-color);
+}
+/* end  header */
+
+/* start  navbar */
+nav .NavLink {
+  margin: 0 3px;
+
+}
+.navbar-nav .nav-link.active ,.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus  {
+  color: var(--main-color) !important; 
+
+  /* transition-duration: 1s !important; */
 }
 
-.bg_primary {
-  background: var(--primary-color);
+
+/* end  navbar */
+
+/* start landing */
+.landing .img{
+  background-image: url("./img/7548d1f7dd8840d24cdf5c0d006ddc2e.jpg")  ;
+  background-size: cover;
+  height: 70vh;
+  border-radius: 30px;
 }
-.img{
-  height: 300px !important;
-  display: block;
+.landing .box{
+  background-color:var(--main-color);
+}
+.landing .discounts{
+ font-size: 60px !important;
+}
+.vehicle .txt1{
+ color: var(--main-color);
+}
+.vehicle .info{
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background:linear-gradient(to bottom, var(--main-color), rgba(235, 235, 235, 0) , rgba(235, 235, 235, 0) , var(--main-color));
+}
+
+.vehicle .carSize ul li button {
+  color: white;
+  background: #0b1d0b;
+}
+.vehicle .nav-pills .nav-link.active{
+  color: black;
+  background: var(--main-color);
+}
+/* end  landing */
+/* start services */
+.services .txt1{
+  color: var(--main-color);
+}
+
+.services .box{
+  height: 30vh;
+background: linear-gradient(200deg, #00ff005e  , #0b1d0b 40%);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+transition-duration: 1s;
+}
+.services .box:hover{
+  background: linear-gradient(180deg, #00ff00  , #0b1d0b 60%);
+transform: scale(1.1);
+
+}
+.services .imgcard1 , .services .imgcard2 , .services .imgcard3 {
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+.services .imgcard1{
+  background-image: url("./img/ecb1b09bbeadbe99c4f02b7215c721e9.jpg" );
+}
+.services .imgcard2{
+  background-image: url("./img/a47c6bbb69a62e08950e3cd5909dcc44.jpg");
+}
+.services .imgcard3{
+  background-image: url("./img/59aa8aa09140a3106b8f60a32b596891.jpg");
+}
+
+.services .cards .card-body{
+background:#03210C;
+font-size: 14px;
+}
+.services .cards img{
+ width: 36px !important;
+ height: 18;
+}
+.services .cards .items .card{
+border: none !important;
+}
+.services .cards .info{
+background: #6C6C6C33 !important;
+color: var(--main-color);
+}
+.services .cards .txtcard{
+color: var(--main-color);
+}
+/* end  services */
+
+/* start  additional */
+.additional .txt1{
+  color: var(--main-color);
+}
+.additional .additionalCard{
+height: fit-content !important;
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4) ), url("./img/8347db20b6aa06bf7f19a492fe4fd3fd.jpeg") !important;
+}
+.additional .additionalCard2{
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4) ), url("./img/2.jpeg") !important;
+}
+.additional .additionalCard3{
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4) ), url("./img/3.jpeg") !important;
+}
+.additional .additionalCard4{
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.4) ), url("./img/4.jpeg") !important;
+}
+.additional .additionalCard .txt{
+  background:rgba(0, 0, 0, 0.5) ;
+
+}
+.additional .additionalCard .box  ,.additional .additionalCard .txtheader{
+transition-duration: 1s;
+}
+.additional .additionalCard:hover .box {
+  background:rgba(184, 184, 184, 0.5) ;
+  border: none !important;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.additional .additionalCard:hover .txtheader {
+  background: linear-gradient(180deg, #00ff003a  , #0b1d0b27 60%) ;
+}
+.additional .additionalCard .maincolor{
+  color: var(--main-color);
+
+}
+.additional .additionalCard .hours{
+  font-size: small;
+}
+.additional .maincolor{
+ color: var(--main-color);
+}
+/* end  additional */
+
+/* start  branch */
+
+.branch input::placeholder{
+ color: white;
+}
+
+/* end  branch */
+
+/* start  booking */
+
+.booking .txt1{
+ color: var(--main-color);
+}
+
+/* end  booking */
+
+
+
+/* start  branch  && booking*/
+
+.branch .maincolor ,.booking .maincolor{
+ color: var(--main-color);
+ border-color: #00ff00 !important;
+ 
+}
+.booking .btnotp{
+  background: rgba(0, 227, 0, 1);
+  border:  rgba(0, 227, 0, 1) ;
+
+}
+.booking input:not([type="submit"]){
+  background:#0b1d0b !important;
+  border: none;
+
+}
+.booking input::placeholder{
+color: rgb(189, 189, 189);
+
+}
+/* end  branch */
+
+/* start Summary */
+.summary .maincolor{
+  color: var(--main-color);
+}
+.summary .bgcard{
+  background:#0b1d0b;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+}
+
+/* end  Summary */
+
+/* start payment */
+.payment .maincolor{
+  color: var(--main-color);
+}
+
+.payment .methoud .alert {
+  background: #03210C !important;
+  height: 10vh;
+
+}
+.payment .methoud input{
+  width: 25px ;
+  height: 25px ;
+  margin-right: 10px;
+}
+.payment .methoud button{
+  background: rgba(0, 227, 0, 1);
+}
+/* start footer */
+footer {
+  background:#03210C ;
+}
+footer .maincolor {
+ color: var(--main-color) ;
+}
+footer .social i {
+
+  width: 20px;
+  height: 20px;
+}
+footer .social a {
+ background: var(--main-color) ;
+ border-radius: 50%;
+ 
+
+}
+/* end footer */
+
+
+
+
+/* end  payment */
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+  /* header */
+  .header{
+  font-size: 10px !important;
+  height: 18vh;
   }
-  .vote{
-      background: var(--primary-color);
-      padding: 5px;
-      top: 0;
-      right: 0;
+  .header .fa-phone-alt {
+    display: block;
   }
-  .bg_nav{
-      
-      background: var(--primary-color);
-  
+  /* landing */
+  .landing h1 ,.landing p,.landing .discounts{
+    font-size: 22px !important;
   }
-  .fontawesome{
-      font-size: 60px;
-      padding: 0;
-      margin: 0;
+  .landing .box{
+    width: fit-content;
   }
-  @media screen and (max-width: 768px){
-     .img{
-        width: 80% !important;
-      }
-      .vote{
-        padding: 5px;
-        top: 0;
-        right:10% !important;
-    }
-    button.btn.rounded-pill.p-0  {
-      width: 75% !important;
-      margin-bottom: 15px !important;
-    }
-  }
+
+}
