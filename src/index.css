@@ -45,6 +45,9 @@ nav .NavLink {
   height: 70vh;
   border-radius: 30px;
 }
+.landing {
+  overflow-x:hidden !important ;
+}
 .landing .box{
   background-color:var(--main-color);
 }
@@ -73,6 +76,9 @@ nav .NavLink {
 }
 /* end  landing */
 /* start services */
+.services {
+  overflow-x:hidden !important ;
+}
 .services .txt1{
   color: var(--main-color);
 }
