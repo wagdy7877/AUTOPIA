@@ -8,7 +8,7 @@
 body {
   font-family: "Inter", serif !important;
 
-
+  overflow-x:hidden ;
   background: #021407 !important;
 
 }
